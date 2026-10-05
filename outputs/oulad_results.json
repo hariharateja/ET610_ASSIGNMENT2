@@ -1,0 +1,763 @@
+{
+  "cleaning": {
+    "enrolments_raw": 32593,
+    "unregistered_before_start": 3097,
+    "enrolments_used": 29496,
+    "outcome_counts": {
+      "Pass": 12361,
+      "Withdrawn": 7067,
+      "Fail": 7044,
+      "Distinction": 3024
+    },
+    "vle_rows": 10655280,
+    "vle_rows_used": 10637493
+  },
+  "H1_weekly_divergence": [
+    {
+      "week": 0,
+      "median_at_risk": 16.0,
+      "median_success": 49.0,
+      "rank_biserial": 0.3030559439047119,
+      "p": 0.0
+    },
+    {
+      "week": 1,
+      "median_at_risk": 12.0,
+      "median_success": 44.0,
+      "rank_biserial": 0.3334864087826619,
+      "p": 0.0
+    },
+    {
+      "week": 2,
+      "median_at_risk": 20.0,
+      "median_success": 60.0,
+      "rank_biserial": 0.30008770934436513,
+      "p": 0.0
+    },
+    {
+      "week": 3,
+      "median_at_risk": 7.0,
+      "median_success": 37.0,
+      "rank_biserial": 0.34276884556165454,
+      "p": 0.0
+    },
+    {
+      "week": 4,
+      "median_at_risk": 5.0,
+      "median_success": 38.0,
+      "rank_biserial": 0.39924598015727797,
+      "p": 0.0
+    },
+    {
+      "week": 5,
+      "median_at_risk": 1.0,
+      "median_success": 30.0,
+      "rank_biserial": 0.43927123882706565,
+      "p": 0.0
+    },
+    {
+      "week": 6,
+      "median_at_risk": 0.0,
+      "median_success": 34.0,
+      "rank_biserial": 0.46521321376291647,
+      "p": 0.0
+    },
+    {
+      "week": 7,
+      "median_at_risk": 0.0,
+      "median_success": 32.0,
+      "rank_biserial": 0.4621190451388173,
+      "p": 0.0
+    },
+    {
+      "week": 8,
+      "median_at_risk": 0.0,
+      "median_success": 20.0,
+      "rank_biserial": 0.4904088566377719,
+      "p": 0.0
+    },
+    {
+      "week": 9,
+      "median_at_risk": 0.0,
+      "median_success": 21.0,
+      "rank_biserial": 0.4708159898582084,
+      "p": 0.0
+    },
+    {
+      "week": 10,
+      "median_at_risk": 0.0,
+      "median_success": 9.0,
+      "rank_biserial": 0.43619693222501843,
+      "p": 0.0
+    }
+  ],
+  "H2_logit": {
+    "mean_late_c": {
+      "OR_per_SD": 1.0002869919034438,
+      "ci_lo": 0.9549770363358233,
+      "ci_hi": 1.0477467290840516,
+      "p": 0.9903196992211257
+    },
+    "mean_score": {
+      "OR_per_SD": 0.2542658664655986,
+      "ci_lo": 0.23973418753448333,
+      "ci_hi": 0.2696783947020581,
+      "p": 0.0
+    },
+    "submit_rate": {
+      "OR_per_SD": 0.0614749690472134,
+      "ci_lo": 0.057123397614551416,
+      "ci_hi": 0.06615803641191595,
+      "p": 0.0
+    },
+    "n": 25507
+  },
+  "H2_bucket_table": {
+    "Distinction": {
+      "Early (>3d)": 17.2,
+      "Just in time": 10.9,
+      "Late 1-7d": 9.0,
+      "Late >7d": 1.1
+    },
+    "Pass": {
+      "Early (>3d)": 57.4,
+      "Just in time": 46.1,
+      "Late 1-7d": 44.7,
+      "Late >7d": 22.5
+    },
+    "Fail": {
+      "Early (>3d)": 15.1,
+      "Just in time": 22.9,
+      "Late 1-7d": 25.5,
+      "Late >7d": 39.2
+    },
+    "Withdrawn": {
+      "Early (>3d)": 10.3,
+      "Just in time": 20.0,
+      "Late 1-7d": 20.8,
+      "Late >7d": 37.2
+    }
+  },
+  "H2_spearman_late_vs_risk": 0.23970849245992346,
+  "auc_curve": [
+    {
+      "cutoff_day": 7,
+      "week": 1,
+      "set": "Demographics + volume",
+      "model": "LogReg",
+      "auc": 0.7057,
+      "n_test": 16982,
+      "prev_test": 0.4809
+    },
+    {
+      "cutoff_day": 7,
+      "week": 1,
+      "set": "Demographics + volume",
+      "model": "RandomForest",
+      "auc": 0.7022,
+      "n_test": 16982,
+      "prev_test": 0.4809
+    },
+    {
+      "cutoff_day": 7,
+      "week": 1,
+      "set": "+ regularity",
+      "model": "LogReg",
+      "auc": 0.7083,
+      "n_test": 16982,
+      "prev_test": 0.4809
+    },
+    {
+      "cutoff_day": 7,
+      "week": 1,
+      "set": "+ regularity",
+      "model": "RandomForest",
+      "auc": 0.7061,
+      "n_test": 16982,
+      "prev_test": 0.4809
+    },
+    {
+      "cutoff_day": 7,
+      "week": 1,
+      "set": "+ regularity + assessment",
+      "model": "LogReg",
+      "auc": 0.7083,
+      "n_test": 16982,
+      "prev_test": 0.4809
+    },
+    {
+      "cutoff_day": 7,
+      "week": 1,
+      "set": "+ regularity + assessment",
+      "model": "RandomForest",
+      "auc": 0.7078,
+      "n_test": 16982,
+      "prev_test": 0.4809
+    },
+    {
+      "cutoff_day": 14,
+      "week": 2,
+      "set": "Demographics + volume",
+      "model": "LogReg",
+      "auc": 0.6968,
+      "n_test": 16032,
+      "prev_test": 0.4502
+    },
+    {
+      "cutoff_day": 14,
+      "week": 2,
+      "set": "Demographics + volume",
+      "model": "RandomForest",
+      "auc": 0.696,
+      "n_test": 16032,
+      "prev_test": 0.4502
+    },
+    {
+      "cutoff_day": 14,
+      "week": 2,
+      "set": "+ regularity",
+      "model": "LogReg",
+      "auc": 0.7035,
+      "n_test": 16032,
+      "prev_test": 0.4502
+    },
+    {
+      "cutoff_day": 14,
+      "week": 2,
+      "set": "+ regularity",
+      "model": "RandomForest",
+      "auc": 0.7,
+      "n_test": 16032,
+      "prev_test": 0.4502
+    },
+    {
+      "cutoff_day": 14,
+      "week": 2,
+      "set": "+ regularity + assessment",
+      "model": "LogReg",
+      "auc": 0.7035,
+      "n_test": 16032,
+      "prev_test": 0.4502
+    },
+    {
+      "cutoff_day": 14,
+      "week": 2,
+      "set": "+ regularity + assessment",
+      "model": "RandomForest",
+      "auc": 0.701,
+      "n_test": 16032,
+      "prev_test": 0.4502
+    },
+    {
+      "cutoff_day": 28,
+      "week": 4,
+      "set": "Demographics + volume",
+      "model": "LogReg",
+      "auc": 0.6968,
+      "n_test": 15735,
+      "prev_test": 0.4398
+    },
+    {
+      "cutoff_day": 28,
+      "week": 4,
+      "set": "Demographics + volume",
+      "model": "RandomForest",
+      "auc": 0.698,
+      "n_test": 15735,
+      "prev_test": 0.4398
+    },
+    {
+      "cutoff_day": 28,
+      "week": 4,
+      "set": "+ regularity",
+      "model": "LogReg",
+      "auc": 0.7084,
+      "n_test": 15735,
+      "prev_test": 0.4398
+    },
+    {
+      "cutoff_day": 28,
+      "week": 4,
+      "set": "+ regularity",
+      "model": "RandomForest",
+      "auc": 0.7115,
+      "n_test": 15735,
+      "prev_test": 0.4398
+    },
+    {
+      "cutoff_day": 28,
+      "week": 4,
+      "set": "+ regularity + assessment",
+      "model": "LogReg",
+      "auc": 0.746,
+      "n_test": 15735,
+      "prev_test": 0.4398
+    },
+    {
+      "cutoff_day": 28,
+      "week": 4,
+      "set": "+ regularity + assessment",
+      "model": "RandomForest",
+      "auc": 0.7622,
+      "n_test": 15735,
+      "prev_test": 0.4398
+    },
+    {
+      "cutoff_day": 42,
+      "week": 6,
+      "set": "Demographics + volume",
+      "model": "LogReg",
+      "auc": 0.7044,
+      "n_test": 15408,
+      "prev_test": 0.4279
+    },
+    {
+      "cutoff_day": 42,
+      "week": 6,
+      "set": "Demographics + volume",
+      "model": "RandomForest",
+      "auc": 0.7073,
+      "n_test": 15408,
+      "prev_test": 0.4279
+    },
+    {
+      "cutoff_day": 42,
+      "week": 6,
+      "set": "+ regularity",
+      "model": "LogReg",
+      "auc": 0.727,
+      "n_test": 15408,
+      "prev_test": 0.4279
+    },
+    {
+      "cutoff_day": 42,
+      "week": 6,
+      "set": "+ regularity",
+      "model": "RandomForest",
+      "auc": 0.73,
+      "n_test": 15408,
+      "prev_test": 0.4279
+    },
+    {
+      "cutoff_day": 42,
+      "week": 6,
+      "set": "+ regularity + assessment",
+      "model": "LogReg",
+      "auc": 0.7658,
+      "n_test": 15408,
+      "prev_test": 0.4279
+    },
+    {
+      "cutoff_day": 42,
+      "week": 6,
+      "set": "+ regularity + assessment",
+      "model": "RandomForest",
+      "auc": 0.7857,
+      "n_test": 15408,
+      "prev_test": 0.4279
+    },
+    {
+      "cutoff_day": 56,
+      "week": 8,
+      "set": "Demographics + volume",
+      "model": "LogReg",
+      "auc": 0.7154,
+      "n_test": 15098,
+      "prev_test": 0.4161
+    },
+    {
+      "cutoff_day": 56,
+      "week": 8,
+      "set": "Demographics + volume",
+      "model": "RandomForest",
+      "auc": 0.7181,
+      "n_test": 15098,
+      "prev_test": 0.4161
+    },
+    {
+      "cutoff_day": 56,
+      "week": 8,
+      "set": "+ regularity",
+      "model": "LogReg",
+      "auc": 0.7527,
+      "n_test": 15098,
+      "prev_test": 0.4161
+    },
+    {
+      "cutoff_day": 56,
+      "week": 8,
+      "set": "+ regularity",
+      "model": "RandomForest",
+      "auc": 0.7554,
+      "n_test": 15098,
+      "prev_test": 0.4161
+    },
+    {
+      "cutoff_day": 56,
+      "week": 8,
+      "set": "+ regularity + assessment",
+      "model": "LogReg",
+      "auc": 0.7996,
+      "n_test": 15098,
+      "prev_test": 0.4161
+    },
+    {
+      "cutoff_day": 56,
+      "week": 8,
+      "set": "+ regularity + assessment",
+      "model": "RandomForest",
+      "auc": 0.8062,
+      "n_test": 15098,
+      "prev_test": 0.4161
+    },
+    {
+      "cutoff_day": 84,
+      "week": 12,
+      "set": "Demographics + volume",
+      "model": "LogReg",
+      "auc": 0.7273,
+      "n_test": 14595,
+      "prev_test": 0.396
+    },
+    {
+      "cutoff_day": 84,
+      "week": 12,
+      "set": "Demographics + volume",
+      "model": "RandomForest",
+      "auc": 0.7299,
+      "n_test": 14595,
+      "prev_test": 0.396
+    },
+    {
+      "cutoff_day": 84,
+      "week": 12,
+      "set": "+ regularity",
+      "model": "LogReg",
+      "auc": 0.7638,
+      "n_test": 14595,
+      "prev_test": 0.396
+    },
+    {
+      "cutoff_day": 84,
+      "week": 12,
+      "set": "+ regularity",
+      "model": "RandomForest",
+      "auc": 0.7668,
+      "n_test": 14595,
+      "prev_test": 0.396
+    },
+    {
+      "cutoff_day": 84,
+      "week": 12,
+      "set": "+ regularity + assessment",
+      "model": "LogReg",
+      "auc": 0.8247,
+      "n_test": 14595,
+      "prev_test": 0.396
+    },
+    {
+      "cutoff_day": 84,
+      "week": 12,
+      "set": "+ regularity + assessment",
+      "model": "RandomForest",
+      "auc": 0.8265,
+      "n_test": 14595,
+      "prev_test": 0.396
+    },
+    {
+      "cutoff_day": 112,
+      "week": 16,
+      "set": "Demographics + volume",
+      "model": "LogReg",
+      "auc": 0.7513,
+      "n_test": 14158,
+      "prev_test": 0.3774
+    },
+    {
+      "cutoff_day": 112,
+      "week": 16,
+      "set": "Demographics + volume",
+      "model": "RandomForest",
+      "auc": 0.7533,
+      "n_test": 14158,
+      "prev_test": 0.3774
+    },
+    {
+      "cutoff_day": 112,
+      "week": 16,
+      "set": "+ regularity",
+      "model": "LogReg",
+      "auc": 0.8055,
+      "n_test": 14158,
+      "prev_test": 0.3774
+    },
+    {
+      "cutoff_day": 112,
+      "week": 16,
+      "set": "+ regularity",
+      "model": "RandomForest",
+      "auc": 0.8104,
+      "n_test": 14158,
+      "prev_test": 0.3774
+    },
+    {
+      "cutoff_day": 112,
+      "week": 16,
+      "set": "+ regularity + assessment",
+      "model": "LogReg",
+      "auc": 0.8629,
+      "n_test": 14158,
+      "prev_test": 0.3774
+    },
+    {
+      "cutoff_day": 112,
+      "week": 16,
+      "set": "+ regularity + assessment",
+      "model": "RandomForest",
+      "auc": 0.8675,
+      "n_test": 14158,
+      "prev_test": 0.3774
+    },
+    {
+      "cutoff_day": 140,
+      "week": 20,
+      "set": "Demographics + volume",
+      "model": "LogReg",
+      "auc": 0.7766,
+      "n_test": 13780,
+      "prev_test": 0.3603
+    },
+    {
+      "cutoff_day": 140,
+      "week": 20,
+      "set": "Demographics + volume",
+      "model": "RandomForest",
+      "auc": 0.7785,
+      "n_test": 13780,
+      "prev_test": 0.3603
+    },
+    {
+      "cutoff_day": 140,
+      "week": 20,
+      "set": "+ regularity",
+      "model": "LogReg",
+      "auc": 0.835,
+      "n_test": 13780,
+      "prev_test": 0.3603
+    },
+    {
+      "cutoff_day": 140,
+      "week": 20,
+      "set": "+ regularity",
+      "model": "RandomForest",
+      "auc": 0.8437,
+      "n_test": 13780,
+      "prev_test": 0.3603
+    },
+    {
+      "cutoff_day": 140,
+      "week": 20,
+      "set": "+ regularity + assessment",
+      "model": "LogReg",
+      "auc": 0.8885,
+      "n_test": 13780,
+      "prev_test": 0.3603
+    },
+    {
+      "cutoff_day": 140,
+      "week": 20,
+      "set": "+ regularity + assessment",
+      "model": "RandomForest",
+      "auc": 0.8959,
+      "n_test": 13780,
+      "prev_test": 0.3603
+    },
+    {
+      "cutoff_day": 182,
+      "week": 26,
+      "set": "Demographics + volume",
+      "model": "LogReg",
+      "auc": 0.8122,
+      "n_test": 13144,
+      "prev_test": 0.3294
+    },
+    {
+      "cutoff_day": 182,
+      "week": 26,
+      "set": "Demographics + volume",
+      "model": "RandomForest",
+      "auc": 0.8123,
+      "n_test": 13144,
+      "prev_test": 0.3294
+    },
+    {
+      "cutoff_day": 182,
+      "week": 26,
+      "set": "+ regularity",
+      "model": "LogReg",
+      "auc": 0.8746,
+      "n_test": 13144,
+      "prev_test": 0.3294
+    },
+    {
+      "cutoff_day": 182,
+      "week": 26,
+      "set": "+ regularity",
+      "model": "RandomForest",
+      "auc": 0.875,
+      "n_test": 13144,
+      "prev_test": 0.3294
+    },
+    {
+      "cutoff_day": 182,
+      "week": 26,
+      "set": "+ regularity + assessment",
+      "model": "LogReg",
+      "auc": 0.9239,
+      "n_test": 13144,
+      "prev_test": 0.3294
+    },
+    {
+      "cutoff_day": 182,
+      "week": 26,
+      "set": "+ regularity + assessment",
+      "model": "RandomForest",
+      "auc": 0.9266,
+      "n_test": 13144,
+      "prev_test": 0.3294
+    }
+  ],
+  "week8_metrics": {
+    "LogReg": {
+      "auc": 0.7996486029656775,
+      "f1": 0.6699194925591607,
+      "precision": 0.684901895576987,
+      "recall": 0.6555785452809167,
+      "balanced_acc": 0.7203020349773841,
+      "confusion": [
+        [
+          6920,
+          1895
+        ],
+        [
+          2164,
+          4119
+        ]
+      ],
+      "n_test": 15098,
+      "n_train_cols": 21
+    },
+    "RandomForest": {
+      "auc": 0.8061891883571701,
+      "f1": 0.6802549775714173,
+      "precision": 0.6727895392278954,
+      "recall": 0.6878879516154703,
+      "balanced_acc": 0.7247153881730216,
+      "confusion": [
+        [
+          6713,
+          2102
+        ],
+        [
+          1961,
+          4322
+        ]
+      ],
+      "n_test": 15098,
+      "n_train_cols": 21
+    }
+  },
+  "week8_rf_cv_auc": {
+    "mean": 0.826911378051288,
+    "sd": 0.006279466330531012
+  },
+  "week8_perm_importance": {
+    "mean_score": 0.0601,
+    "submit_rate": 0.048,
+    "mean_late": 0.0127,
+    "edu_num": 0.0062,
+    "active_weeks_ratio": 0.005,
+    "days_since_last": 0.0047,
+    "type_entropy": 0.0035,
+    "recent_trend": 0.0031,
+    "imd_num": 0.0026,
+    "active_days": 0.0025,
+    "active_ratio": 0.0019,
+    "date_registration": 0.001,
+    "n_due": 0.0008,
+    "clicks_total": 0.0008,
+    "studied_credits": 0.0007,
+    "female": 0.0007,
+    "num_of_prev_attempts": 0.0007,
+    "weekly_cv": 0.0006,
+    "clicks_prestart": 0.0005,
+    "age_num": 0.0005,
+    "disab": 0.0001
+  },
+  "week8_logreg_coef": {
+    "mean_score": -0.708,
+    "submit_rate": -0.55,
+    "active_weeks_ratio": -0.545,
+    "female": -0.289,
+    "recent_trend": -0.279,
+    "edu_num": -0.198,
+    "weekly_cv": -0.154,
+    "imd_num": -0.153,
+    "age_num": -0.102,
+    "active_days": -0.076,
+    "active_ratio": -0.076,
+    "n_due": -0.014,
+    "date_registration": 0.029,
+    "clicks_prestart": 0.038,
+    "clicks_total": 0.04,
+    "disab": 0.047,
+    "num_of_prev_attempts": 0.106,
+    "studied_credits": 0.122,
+    "days_since_last": 0.142,
+    "type_entropy": 0.22,
+    "mean_late": 0.316
+  },
+  "kmeans_silhouette": {
+    "2": 0.32866231683449965,
+    "3": 0.23193565366446528,
+    "4": 0.17727243517442715,
+    "5": 0.17405455159491262,
+    "6": 0.13943168889149415,
+    "7": 0.12716334217659098
+  },
+  "kmeans_clusters": {
+    "k": 4,
+    "sizes": {
+      "High & sustained": 5227,
+      "Moderate & steady": 8133,
+      "Early drop-off": 8202,
+      "Minimal / absent": 7934
+    },
+    "outcomes_pct": {
+      "High & sustained": {
+        "Distinction": 24.0,
+        "Pass": 64.3,
+        "Fail": 7.7,
+        "Withdrawn": 3.9
+      },
+      "Moderate & steady": {
+        "Distinction": 14.3,
+        "Pass": 62.7,
+        "Fail": 15.0,
+        "Withdrawn": 7.9
+      },
+      "Early drop-off": {
+        "Distinction": 5.0,
+        "Pass": 33.9,
+        "Fail": 30.4,
+        "Withdrawn": 30.7
+      },
+      "Minimal / absent": {
+        "Distinction": 2.4,
+        "Pass": 14.1,
+        "Fail": 36.9,
+        "Withdrawn": 46.6
+      }
+    }
+  }
+}

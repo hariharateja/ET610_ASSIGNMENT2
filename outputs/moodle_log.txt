@@ -1,0 +1,116 @@
+{
+ "users_kept": 161,
+ "final_done_n": 58,
+ "sessions": {
+  "n": 6348,
+  "median_dur_min": 1.4833333333333334,
+  "median_events": 4.0
+ },
+ "ml": {
+  "LogReg (L2)": {
+   "auc": {
+    "mean": 0.938533189033189,
+    "sd": 0.045179382708477156
+   },
+   "f1": {
+    "mean": 0.8490503101318693,
+    "sd": 0.06158066689986337
+   },
+   "precision": {
+    "mean": 0.814225392254804,
+    "sd": 0.07889418277253743
+   },
+   "recall": {
+    "mean": 0.8945454545454546,
+    "sd": 0.08353749096480102
+   },
+   "balanced_acc": {
+    "mean": 0.8869632034632033,
+    "sd": 0.05020683596761476
+   }
+  },
+  "RandomForest": {
+   "auc": {
+    "mean": 0.9426168831168832,
+    "sd": 0.03666692708462687
+   },
+   "f1": {
+    "mean": 0.8567760059586148,
+    "sd": 0.0625930778585843
+   },
+   "precision": {
+    "mean": 0.8320578588078587,
+    "sd": 0.07966525685199348
+   },
+   "recall": {
+    "mean": 0.8895454545454546,
+    "sd": 0.08119982380888029
+   },
+   "balanced_acc": {
+    "mean": 0.8917489177489176,
+    "sd": 0.05067716038250687
+   }
+  },
+  "Baseline LogReg (events only)": {
+   "auc": {
+    "mean": 0.7254130591630592,
+    "sd": 0.09116945293720154
+   }
+  },
+  "RandomForest (behaviour only)": {
+   "auc": {
+    "mean": 0.7388546176046177,
+    "sd": 0.07756874677173524
+   }
+  }
+ },
+ "moodle_silhouette": {
+  "2": 0.21215964451673797,
+  "3": 0.18990883129220612,
+  "4": 0.17751718867117408,
+  "5": 0.1950216424918321,
+  "6": 0.18218226414632233,
+  "7": 0.19049732428348154
+ },
+ "synopsis_chi2": {
+  "chi2": 102.10445989209744,
+  "p": 5.482180158257659e-22,
+  "dof": 3
+ }
+}
+cluster             Intensive self-testers  ...  Exam-only / last-minute
+events                                6.95  ...                     5.06
+sessions                             91.68  ...                    14.46
+mean_sess_min                        11.95  ...                    12.41
+active_weeks_ratio                    0.75  ...                     0.26
+weekly_cv                             2.31  ...                     3.99
+night_ratio                           0.13  ...                     0.07
+practice_share                        0.19  ...                     0.01
+content_views                         5.54  ...                     3.00
+self_monitoring                      36.40  ...                     2.57
+synopsis_lead_days                   11.91  ...                    -4.33
+exam_window_share                     0.21  ...                     0.46
+final_done                            0.76  ...                     0.09
+n                                    25.00  ...                    35.00
+
+[13 rows x 4 columns]
+               feature  median_completed  median_not   r_rb      p  p_holm
+18  synopsis_lead_days            14.337      -5.000  0.838  0.000   0.000
+14     self_monitoring            16.000       0.000  0.896  0.000   0.000
+17  synopsis_submitted             1.000       0.000  0.797  0.000   0.000
+4          active_days            14.000       7.000  0.530  0.000   0.000
+7          gap_sd_days             3.240       6.311 -0.512  0.000   0.000
+5   active_weeks_ratio             0.700       0.500  0.496  0.000   0.000
+1             sessions            17.000       8.000  0.492  0.000   0.000
+6            weekly_cv             1.528       1.941 -0.465  0.000   0.000
+0               events             5.493       4.663  0.449  0.000   0.000
+3       time_on_task_h             3.096       1.075  0.431  0.000   0.000
+15      forum_glossary             1.000       0.000  0.339  0.000   0.001
+8          night_ratio             0.002       0.000  0.273  0.001   0.006
+13   content_diversity            29.500      12.000  0.320  0.001   0.006
+12       content_views             4.527       3.332  0.276  0.004   0.022
+2        mean_sess_min             9.894       6.917  0.238  0.012   0.062
+10   practice_attempts             0.000       0.000  0.069  0.258   1.000
+9        weekend_ratio             0.296       0.246  0.078  0.413   1.000
+11      practice_share             0.000       0.000  0.053  0.479   1.000
+16    scorm_mean_score            40.578      40.578 -0.001  0.989   1.000
