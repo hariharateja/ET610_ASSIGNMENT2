@@ -1,6 +1,8 @@
 # ET610 Learning Analytics — Group Assignment 2
 Hari Hara Teja -24b0977
+
 T Ganesh -24b2250
+
 Temporal behaviour analysis and ML on **OULAD** and a **Moodle** interaction log.
 
 ## Layout
